@@ -1,7 +1,9 @@
 require 'rubygems'
-require 'sinatra'
+require 'sinatra/base'
 
-get '/' do
-    pp "Hola Mundo"
+class ApiRestTwitterBot < Sinatra::Base
+    get '/' do
+        "Hola Mundo"
+    end
 end
 
